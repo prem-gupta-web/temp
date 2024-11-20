@@ -1,0 +1,9 @@
+my_list=[]
+my_list.append(20)
+my_list.append(30)
+my_list.append(40)
+print(my_list)
+my_list.remove(40)
+print(my_list)
+my_list.extend([60,33])
+print(my_list)
