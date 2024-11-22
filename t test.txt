@@ -1,0 +1,12 @@
+file name first hai 
+
+
+
+library(readxl)
+> library(readxl)
+> first <- read_excel("statistics/practicals/first.xlsx")
+> View(first)
+> first$Teaching_Method<-as.factor(first$Teaching_Method)
+> first$Exam_Score<-as.numeric(first$Exam_Score)
+> t_test_result<-t.test(Exam_Score~Teaching_Method,data=first)
+> print(t_test_result)

@@ -1,0 +1,12 @@
+file name third hai 
+
+
+ library(readxl)
+> library(readxl)
+> third <- read_excel("statistics/practicals/third.xlsx")
+> View(third)
+> print(third)
+
+
+correlation_matrix<-cor(third[,c("height","weight","age")])
+> print(correlation_matrix)

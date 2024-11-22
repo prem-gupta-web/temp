@@ -1,0 +1,22 @@
+file name fifth hai 
+
+
+
+
+library(readxl)
+> library(readxl)
+> fifth <- read_excel("statistics/practicals/fifth.xlsx")
+> View(fifth)
+> head(fifth)
+
+
+chech structure
+
+
+ str(fifth)
+
+
+preform one way anova
+
+anova_result<-aov(y~x,data=fifth)
+> summary(anova_result)

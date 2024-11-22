@@ -1,0 +1,24 @@
+file name fourth hai 
+
+
+. Load Data from Excel
+
+ library(readxl)
+> library(readxl)
+> fourth <- read_excel("statistics/practicals/fourth.xlsx")
+> View(fourth)
+> head(fourth)
+
+
+. Perform Simple Linear Regression
+
+ model<-lm(y~x,data=fourth)
+> summary(model)
+
+
+
+. Visualize the Regression (optional)
+
+ plot(fourth$x, fourth$y, main="Simple Linear Regression", xlab="x", ylab="y")
+> abline(model, col="red")
+> 

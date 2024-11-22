@@ -1,0 +1,13 @@
+file eight hai 
+
+
+
+
+ A <- matrix(c(4, 1, 1, 3), nrow=2, byrow=TRUE)
+ print("Matrix A:")
+print(A)
+ eigen_result <- eigen(A)
+ print("Eigenvalues:")
+print(eigen_result$values)
+print("Eigenvectors:")
+print(eigen_result$vectors)

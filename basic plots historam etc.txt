@@ -1,0 +1,65 @@
+file name seven hai 
+
+
+library(readxl)
+> library(readxl)
+> seven <- read_excel("statistics/practicals/seven.xlsx")
+> View(seven)
+> head(seven)
+
+
+
+
+
+# Histogram of 'y'
+
+
+hist(seven$y,
+     main = "Histogram of y",
+     xlab = "y Values",
+     col = "skyblue",
+     border = "black",
+     breaks = 10)
+
+
+
+# Bar plot of 'x'
+
+
+barplot(table(seven$x),
+        main = "Bar Plot of x",
+        xlab = "x Categories",
+        ylab = "Frequency",
+        col = "orange")
+
+
+
+# Box plot of 'y' for each level of 'x'
+
+
+
+boxplot(y ~ x, 
+        data = seven,
+        main = "Box Plot of y for Each Category of x",
+        xlab = "x Categories",
+        ylab = "y Values",
+        col = "lightgreen")
+
+
+
+
+# Scatter plot between 'x' and 'y'
+plot(seven$x, seven$y,
+     main = "Scatter Plot of x vs y",
+     xlab = "x Values",
+     ylab = "y Values",
+     col = "blue", 
+     pch = 19)  # pch = 19 sets the point type (solid circle)
+
+
+
+
+
+
+
+

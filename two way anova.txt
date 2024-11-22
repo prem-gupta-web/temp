@@ -1,0 +1,23 @@
+
+fime name sixth hai 
+
+
+
+
+
+library(readxl)
+> library(readxl)
+> sixth <- read_excel("statistics/practicals/sixth.xlsx")
+> View(sixth)
+> head(sixth)
+
+
+convert in correct formate
+
+sixth$`exercise_type`<-as.factor(sixth$`exercise_type`)
+> sixth$`diet_type`<-as.factor(sixth$`diet_type`)
+> sixth$`weight_loss`<-as.factor(sixth$'weight_loss')
+
+
+preform two way anova
+anova_result<-aov('weight_loss'~ exercise_type*diet_type,data=sixth)

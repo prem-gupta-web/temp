@@ -1,0 +1,19 @@
+file name second hai 
+
+
+
+> library(readxl)
+> library(readxl)
+> second <- read_excel("statistics/practicals/second.xlsx")
+> View(second)
+> print(second)
+
+
+
+> second<-table(second$Gender,second$Preference)
+> print(second)
+
+
+
+> second<-chisq.test(second,simulate.p.value=TRUE)
+ print(second)
